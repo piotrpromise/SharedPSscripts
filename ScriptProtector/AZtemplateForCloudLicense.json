@@ -7,13 +7,14 @@
   "parameters": {
     "namePrefix": {
       "type": "string",
-      "defaultValue": "spactiv",
-      "metadata": { "description": "Short prefix for resource names (letters/numbers)." }
+      "minLength": 1,
+      "maxLength": 11,
+      "metadata": { "description": "Short prefix (letters/numbers) put at the start of every resource name. Required - type your own, e.g. your company/product short name." }
     },
     "location": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]",
-      "metadata": { "description": "Location (defaults to the resource group location)." }
+      "defaultValue": "polandcentral",
+      "metadata": { "description": "Azure region the resources are created in (e.g. polandcentral, westeurope, uksouth)." }
     }
   },
   "variables": {

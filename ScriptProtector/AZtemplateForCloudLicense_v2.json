@@ -7,6 +7,7 @@
   "parameters": {
     "namePrefix": {
       "type": "string",
+      "defaultValue": "scriptprotector",
       "minLength": 1,
       "maxLength": 18,
       "metadata": { "description": "Short prefix (letters/numbers only, up to 18 chars) put at the start of every resource name. Required - type your own, e.g. your company/product short name." }
